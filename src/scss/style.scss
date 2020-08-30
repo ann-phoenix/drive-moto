@@ -282,7 +282,6 @@
 
 //end banner-section
 //start search 
-
 .search {
 
 	&__tabs {
@@ -342,5 +341,68 @@
 }
 
 //end search 
+//start categories
+.categories {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-bottom: 30px;
+		border: 1px solid $gray;
+		border-radius: 3px;
+		width: 370px;
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 20px 16px;
+		transition: all .3s;
+	}
+
+	&__item:hover{
+		box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+	}
+
+	&__item-info {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__item-title {
+		@include b700;
+		font-size: 23px;
+		line-height: 28px;
+		transition: all .3s;
+	}
+
+	&__item:hover .categories__item-title{
+		color: $blue;
+	}
+
+	&__item-text {
+		font-size: 14px;
+		line-height: 17px;
+		color: $gray;
+	}
+
+	&__item-text::after{
+		content: url('../images/icons/arrow-link.svg');
+		padding-left: 3px;
+	}
+
+	&__item-img {
+		width: 50%;
+		text-align: center;
+	}
+
+	&__item-img img {
+		max-width: 100%;
+	}
+}
+
+//end categories
 
 @import 'media';
