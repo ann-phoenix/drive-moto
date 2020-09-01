@@ -39,7 +39,7 @@ a {
   color: inherit;
   display: inline-block;
 }
-
+a:focus,
 button:focus,
 input:focus {
   outline: transparent;
@@ -55,7 +55,7 @@ h6 {
 }
 
 body{
-  color: #2f3035;
+  color: $dark;
   font-size: 20px;
   line-height: 24px;
   @include sf400;
