@@ -708,7 +708,7 @@
 		color: #48494d;
 	}
 
-	&__bottom-link + &__bottom-link{
+	&__bottom-link+&__bottom-link {
 		margin-left: 81px;
 	}
 }
@@ -723,7 +723,136 @@
 	}
 }
 
-
 //end footer
+//start breadcrumbs
+.breadcrumbs {
+	margin-bottom: 40px;
+
+	&__list-item {
+		display: inline-block;
+		padding-right: 16px;
+		margin-right: 10px;
+		position: relative;
+		font-size: 15px;
+		line-height: 18px;
+		color: $gray;
+	}
+
+	&__list-item:after {
+		content: '';
+		position: absolute;
+		background: url('../images/icons/arrow-link.svg') no-repeat;
+		right: 0;
+		width: 6px;
+		height: 10px;
+		bottom: 3px;
+	}
+
+	&__list-item:last-child:after {
+		display: none;
+	}
+}
+
+//end breadcrumbs
+
+//start catalog
+.catalog {
+	margin-bottom: 100px;
+
+	&__title {
+		font-size: 30px;
+		line-height: 36px;
+		@include sf700;
+		margin-bottom: 26px;
+	}
+
+	&__filter {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	&__filter-items button {
+		font-size: 14px;
+		line-height: 17px;
+		opacity: .7;
+		padding: 5px 22px;
+		border: none;
+		border-radius: 3px;
+		background-color: $light-gray;
+	}
+
+	&__filter-items button+button {
+		margin-left: 8px;
+	}
+
+	&__filter-btn button {
+		background-color: transparent;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__filter-btn button+button {
+		margin-left: 10px;
+		margin-top: -1px;
+	}
+
+	&__inner {
+		display: flex;
+	}
+
+	&__inner-aside {
+		min-width: 290px;
+		margin-right: 10px;
+	}
+
+	&__inner-list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__inner-list .product-item__wrapper {
+		margin-bottom: 30px;
+	}
+
+	.product-item img {
+		width: 100%;
+	}
+}
+
+//pagination
+.pagination {
+	width: 100%;
+	margin-top: 70px;
+
+	&-list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&-list__item {
+		padding: 6px 12px;
+		border: 2px solid transparent;
+		margin: 0 2px;
+		font-size: 18px;
+		line-height: 22px;
+		@include b400;
+		color: $gray;
+	}
+
+	&-list__item.active {
+		padding: 6px 12px;
+		border: 2px solid $blue;
+		color: $blue;
+	}
+
+	&-list__item a {
+		display: block;
+	}
+}
+
+//end catalog
 
 @import 'media';
