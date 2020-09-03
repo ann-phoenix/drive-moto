@@ -5,9 +5,12 @@
   "main": "gulpfile.js",
   "dependencies": {
     "gulp-webpcss": "^1.1.1",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.4.1",
+    "jquery-form-styler": "^2.0.2",
     "mkdir": "0.0.2",
     "normalize.css": "^8.0.1",
+    "rateyo": "^3.0.0-alpha.2",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

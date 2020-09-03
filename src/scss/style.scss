@@ -853,6 +853,85 @@
 	}
 }
 
+//aside
+.aside-filter {
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__tab {
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 0.09em;
+		color: $gray;
+		width: 50%;
+		padding-bottom: 7px;
+
+	}
+
+	&__tab.tab--active {
+		color: $dark;
+		@include sf700;
+	}
+
+	&__tab.tab--active span {
+		border-bottom: 2px solid $blue;
+		padding-bottom: 7px;
+		display: inline-block;
+	}
+
+
+	&__item-drop {
+		margin: 40px 0;
+	}
+
+	&__item-title {
+		font-size: 16px;
+		line-height: 19px;
+		@include sf500;
+		padding-left: 26px;
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	&__content-box {
+		width: 50%;
+	}
+
+	&__content-label {
+		font-size: 14px;
+		line-height: 17px;
+		cursor: pointer;
+	}
+
+}
+
+.filter__item-drop {
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		position: absolute;
+		background: url('../images/icons/arrow-down.svg') no-repeat;
+		width: 12px;
+		height: 8px;
+		left: 0;
+		bottom: 5px;
+		transform: rotate(0deg);
+	}
+}
+
+.filter__item-drop--active:before {
+	transform: rotate(180deg);
+
+}
+
 //end catalog
 
 @import 'media';

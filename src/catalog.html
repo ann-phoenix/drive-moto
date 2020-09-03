@@ -19,12 +19,12 @@
           <div class="catalog__filter">
             <div class="catalog__filter-items">
               <button class="btn">Полноприводные</button>
-              <button class="btn">от 5000</button>
+              <button class="btn">от 100 000</button>
               <button class="btn">BRP</button>
               <button class="btn">Spark</button>
             </div>
             <div class="catalog__filter-btn btn">
-              <select>
+              <select class="filter-style">
                 <option value=""></option>
                 <option value=""></option>
                 <option value=""></option>
@@ -53,7 +53,43 @@
             </div>
           </div>
           <div class="catalog__inner">
-            <aside class="catalog__inner-aside">
+            <!--aside-filter-->
+            <aside class="catalog__inner-aside aside-filter">
+              <div class="tabs-wrapper">
+                <div class="tabs aside-filter__tabs">
+                  <a class="tab tab--active aside-filter__tab tab--active" href="#"><span>Параметры</span></a>
+                  <a class="tab aside-filter__tab" href="#"><span>по марке</span></a>
+                </div>
+                <div class="tabs-container">
+                  <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+                    <form class="aside-filter__form">
+                      <ul class="aside-filter__list">
+                        <li class="aside-filter__item-drop">
+                          <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</p>
+                          <div class="aside-filter__content">
+                            <div class="aside-filter__content-box">
+                              <label class="aside-filter__content-label">
+                                <input class="filter-styler" type="checkbox"> 
+                                В наличие
+                              </label>
+                            </div>
+                            <div class="aside-filter__content-box">
+                              <label class="aside-filter__content-label">
+                                <input class="filter-styler" type="checkbox"> 
+                                Под заказ
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="aside-filter__item-drop"></li>
+                        <li class="aside-filter__item-drop"></li>
+                        <li class="aside-filter__item-list"></li>
+                      </ul>
+                    </form>
+                  </div>
+                  <div class="tabs-content aside-filter__tabs-content">content-2</div>
+                </div>
+              </div>
             </aside>
             <div class="catalog__inner-list">
               <div class="product-item__wrapper">
@@ -138,7 +174,22 @@
                   <img src="images/icons/basket-white.svg" alt="">
                 </button>
                 <a class="product-item__notify-link" href="#"> <span>Сообщить о поступлении</span></a>
-                <a class="product-item product-item--sale" href="#">
+                <a class="product-item" href="#">
+                  <p class="product-item__hover-text">посмотреть товар</p>
+                  <img src="images/content/jetski-1.png" alt="">
+                  <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
+                  <p class="product-item__price">1 049 500 ₽</p>
+                  <p class="product-item__notify-text">нет в наличии</p>
+                </a>
+              </div>
+              <div class="product-item__wrapper">
+                <button class="product-item__favorite">
+                </button>
+                <button class="product-item__basket btn">
+                  <img src="images/icons/basket-white.svg" alt="">
+                </button>
+                <a class="product-item__notify-link" href="#"> <span>Сообщить о поступлении</span></a>
+                <a class="product-item" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
                   <img src="images/content/jetski-1.png" alt="">
                   <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
@@ -168,7 +219,7 @@
                   <img src="images/icons/basket-white.svg" alt="">
                 </button>
                 <a class="product-item__notify-link" href="#"> <span>Сообщить о поступлении</span></a>
-                <a class="product-item product-item--sale" href="#">
+                <a class="product-item" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
                   <img src="images/content/jetski-1.png" alt="">
                   <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
@@ -183,7 +234,7 @@
                   <img src="images/icons/basket-white.svg" alt="">
                 </button>
                 <a class="product-item__notify-link" href="#"> <span>Сообщить о поступлении</span></a>
-                <a class="product-item product-item--sale" href="#">
+                <a class="product-item" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
                   <img src="images/content/jetski-1.png" alt="">
                   <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
@@ -198,22 +249,7 @@
                   <img src="images/icons/basket-white.svg" alt="">
                 </button>
                 <a class="product-item__notify-link" href="#"> <span>Сообщить о поступлении</span></a>
-                <a class="product-item product-item--sale" href="#">
-                  <p class="product-item__hover-text">посмотреть товар</p>
-                  <img src="images/content/jetski-1.png" alt="">
-                  <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
-                  <p class="product-item__price">1 049 500 ₽</p>
-                  <p class="product-item__notify-text">нет в наличии</p>
-                </a>
-              </div>
-              <div class="product-item__wrapper">
-                <button class="product-item__favorite">
-                </button>
-                <button class="product-item__basket btn">
-                  <img src="images/icons/basket-white.svg" alt="">
-                </button>
-                <a class="product-item__notify-link" href="#"> <span>Сообщить о поступлении</span></a>
-                <a class="product-item product-item--sale" href="#">
+                <a class="product-item" href="#">
                   <p class="product-item__hover-text">посмотреть товар</p>
                   <img src="images/content/jetski-1.png" alt="">
                   <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>

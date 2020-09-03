@@ -32,4 +32,13 @@ $(function () {
 	 $(this).toggleClass('product-item__favorite--active')
  })
 
+ /*Rate Yo! and filter*/
+ $('.filter-style').styler();
+
+
+ $('.filter__item-drop').on('click', function(){
+	 $(this).toggleClass('filter__item-drop--active');
+	 $(this).next().slideToggle('200');
+ })
+
 });
