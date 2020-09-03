@@ -32,7 +32,7 @@ $(function () {
 	 $(this).toggleClass('product-item__favorite--active')
  })
 
- /*Rate Yo! and filter*/
+ /*Jquery form styler and filter*/
  $('.filter-style').styler();
 
 
@@ -40,5 +40,13 @@ $(function () {
 	 $(this).toggleClass('filter__item-drop--active');
 	 $(this).next().slideToggle('200');
  })
+
+ /*ion.rangeSlider*/
+ $('.js-range-slider').ionRangeSlider({
+	type: 'double',
+	min: 100000,
+	max: 500000,
+	
+});
 
 });

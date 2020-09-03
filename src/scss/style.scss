@@ -896,6 +896,13 @@
 
 	&__content {
 		display: flex;
+		flex-wrap: wrap;
+		margin-top: 20px;
+
+	}
+
+	&__content-radio.aside-filter__content {
+		flex-wrap: nowrap;
 	}
 
 	&__content-box {
@@ -911,7 +918,6 @@
 }
 
 .filter__item-drop {
-	margin-bottom: 20px;
 	position: relative;
 	cursor: pointer;
 
@@ -931,6 +937,117 @@
 	transform: rotate(180deg);
 
 }
+
+//Jquery form styler
+.jq-checkbox,
+.jq-radio {
+	width: 14px;
+	height: 14px;
+	border: 1px solid $gray;
+	border-radius: 1px;
+	box-shadow: none;
+	background: #fff;
+	vertical-align: -2px;
+	margin: 0 8px 0 0;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+	background: $blue;
+	border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+	width: 8px;
+	height: 6px;
+	margin: 4px 0 0 3px;
+	border-bottom: none;
+	border-left: none;
+	transform: rotate(0deg);
+	background: url('../images/icons/checked.svg') no-repeat;
+}
+
+.jq-radio.checked .jq-radio__div {
+	width: 0px;
+	height: 0px;
+	margin: 0;
+	border-radius: 0%;
+	background: transparent;
+	box-shadow: none;
+}
+
+//ion.rangeSlider
+.irs--flat {
+	width: 100%;
+	margin-top: -15px;
+}
+
+.irs--flat .irs-max,
+.irs--flat .irs-min {
+	top: 60px;
+	padding: 0;
+	color: $dark;
+	@include b400;
+	font-size: 14px;
+	line-height: 17px;
+	text-shadow: none;
+	text-decoration: underline;
+	background-color: transparent;
+	border-radius: 0px;
+	visibility: visible !important;
+	padding-left: 27px;
+}
+
+.irs-min:before,
+.irs-max:before {
+	position: absolute;
+	font-size: 14px;
+	line-height: 17px;
+	color: $gray;
+	text-decoration: none;
+	left: 0;
+}
+
+.irs-min:before {
+	content: 'от';
+}
+
+.irs-max:before {
+	content: 'до';
+}
+
+.irs--flat .irs-line {
+top: 25px;
+height: 1px;
+background-color: $gray;
+border-radius: 0px;
+}
+
+.irs--flat .irs-bar {
+top: 25px;
+height: 3px;
+background-color: $blue;
+}
+
+.irs--flat .irs-handle{
+	width: 8px;
+	height: 8px;
+	background-color: $blue;
+	border-radius: 50%;
+	top: 22px;
+}
+
+.irs--flat .irs-handle>i:first-child{
+	display: none;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
+	display: none;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-single:before, .irs--flat .irs-to:before{
+display: none;
+}
+
 
 //end catalog
 

@@ -100,10 +100,9 @@ gulp.task("style", function () {
 			"node_modules/normalize.css/normalize.css",
 			"node_modules/slick-carousel/slick/slick.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.css",
+			"node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",
 			"node_modules/ion-rangeslider/css/ion.rangeSlider.css",
 			"node_modules/rateyo/lib/cjs/rateyo.css",
-
-
 		])
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
 		.pipe(cssmin()) //минифицируем полученный файл
