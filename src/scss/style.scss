@@ -442,11 +442,16 @@
 	padding: 52px 20px 31px;
 	transition: all .4s;
 	min-height: 400px;
-
+	width: 100%;
 
 	&__wrapper {
 		position: relative;
 		width: 271px;
+		transition: all .4s;
+	}
+
+	&__wrapper.product-item__wrapper--line {
+		width: 100%;
 	}
 
 	&__wrapper.product-item__not-available .product-item__price {
@@ -500,7 +505,10 @@
 		border-radius: 3px;
 		position: absolute;
 		display: inline-block;
-		top: 30%;
+		top: 40%;
+		width: 80%;
+		left: 50%;
+		transform: translate(-50%,-50%);
 		opacity: 0;
 		transition: all .4s;
 	}
@@ -522,6 +530,8 @@
 	&__title {
 		font-weight: normal;
 		padding: 14px 0 25px;
+		font-size: 18px;
+		line-height: 21px;
 	}
 
 	//heart icon
@@ -550,7 +560,6 @@
 		background: url('../images/icons/heart-blue.svg') no-repeat;
 
 	}
-
 	//
 
 	&__price {
@@ -786,6 +795,16 @@
 		margin-left: 8px;
 	}
 
+	&__filter-btn {
+		display: flex;
+		align-items: center;
+
+		.jq-selectbox__dropdown {
+			left: 0;
+			top: 31px;
+		}
+	}
+
 	&__filter-btn button {
 		background-color: transparent;
 		border: none;
@@ -795,7 +814,20 @@
 
 	&__filter-btn button+button {
 		margin-left: 10px;
-		margin-top: -1px;
+	}
+
+	&__filter-button {
+		opacity: .3;
+	}
+
+	&__filter-btngrid {
+		width: 23px;
+		height: 21px;
+	}
+
+	&__filter-btnline {
+		width: 23px;
+		height: 19px;
 	}
 
 	&__inner {
@@ -818,8 +850,21 @@
 	}
 
 	.product-item img {
-		width: 100%;
+		max-width: 100%;
 	}
+
+}
+
+.catalog__filter-button--active {
+	opacity: 1;
+}
+
+.select-item {
+	border: 1px solid $gray;
+	font-size: 14px;
+	line-height: 16px;
+	margin-right: 38px;
+	padding: 7px 10px 7px 10px;
 }
 
 //pagination
@@ -1010,12 +1055,14 @@
 	border: none;
 	color: $gray;
 	margin-bottom: 15px;
+	transition: all .3s;
+
+	&:hover {
+		background-color: $blue;
+		color: #fff;
+	}
 }
 
-.filter-btn__send--active {
-	background-color: $blue;
-	color: #fff;
-}
 
 .filter-btn__reset {
 	font-size: 13px;
@@ -1026,6 +1073,12 @@
 	display: inline-block;
 	background-color: transparent;
 	padding: 0;
+	transition: all .3s;
+
+	&:hover {
+		color: $dark;
+		border-bottom: 1px solid $dark;
+	}
 }
 
 .btn-checked {
@@ -1121,8 +1174,8 @@
 }
 
 .jq-selectbox__select {
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 13px;
+	line-height: 16px;
 	color: $dark;
 	@include b400;
 	height: 18px;
@@ -1185,6 +1238,7 @@
 	padding: 6px 15px;
 	color: #231F20;
 }
+
 
 //ion.rangeSlider
 .irs--flat {

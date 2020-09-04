@@ -18,18 +18,18 @@
           <h2 class="catalog__title">Гидроциклы</h2>
           <div class="catalog__filter">
             <div class="catalog__filter-items">
-              <button class="btn">Полноприводные</button>
+              <button class="btn">Любительские</button>
               <button class="btn">от 100 000</button>
               <button class="btn">BRP</button>
               <button class="btn">Spark</button>
             </div>
             <div class="catalog__filter-btn btn">
-              <select class="filter-style">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+              <select class="filter-style select-item">
+                <option>По полулярности</option>
+                <option>По увеличению цены</option>
+                <option>По уменьшению цены</option>
               </select>
-              <button class="catalog__filter-btngrid btn">
+              <button class="catalog__filter-btngrid btn catalog__filter-button catalog__filter-button--active">
                 <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2" />
                   <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
@@ -38,9 +38,9 @@
                   <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
                 </svg>
               </button>
-              <button class="catalog__filter-btnline btn">
+              <button class="catalog__filter-btnline btn catalog__filter-button">
                 <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.3">
+                  <g opacity="1">
                     <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
                     <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035" />
                     <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035" />
@@ -96,7 +96,7 @@
                           filter__item-drop--active">Цена</p>
                           <div class="aside-filter__content">
                             <input type="text" class="js-range-slider" name="my_range" value="" data-min="100000"
-                              data-max="500000" data-from="150000" data-to="275000" />
+                              data-max="500000" data-from="100000" data-to="250000" />
                           </div>
                         </li>
                         <li class="aside-filter__item-list">
@@ -227,7 +227,7 @@
                           </div>
                         </li>
                         <li class="aside-filter__item-drop aside-filter__item-btn">
-                          <button class="filter-btn__send btn filter-btn__send--active" type="submit">Выбрать</button>
+                          <button class="filter-btn__send btn filter-btn__send" type="submit">Выбрать</button>
                           <button class="filter-btn__reset btn" type="submit">Сбросить фильтр</button>
                         </li>
                       </ul>
