@@ -102,7 +102,7 @@ gulp.task("style", function () {
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",
 			"node_modules/ion-rangeslider/css/ion.rangeSlider.css",
-			"node_modules/rateyo/lib/cjs/rateyo.css",
+			"node_modules/rateyo/src/jquery.rateyo.css",
 		])
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
 		.pipe(cssmin()) //минифицируем полученный файл
@@ -119,8 +119,7 @@ gulp.task("script", function () {
 			"node_modules/slick-carousel/slick/slick.js",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.js",
 			"node_modules/ion-rangeslider/js/ion.rangeSlider.js",
-			"node_modules/rateyo/lib/cjs/rateyo.js",
-
+			"node_modules/rateyo/src/jquery.rateyo.js",
 		])
 		.pipe(size())
 		.pipe(babel())
@@ -251,7 +250,7 @@ gulp.task("images", function () {
 					recompress({
 						//Настройки сжатия изображений. Сейчас всё настроено так, что сжатие почти незаметно для глаза на обычных экранах. Можете покрутить настройки, но за результат не отвечаю.
 						loops: 4, //количество прогонок изображения
-						min: 80, //минимальное качество в процентах
+						min: 95, //минимальное качество в процентах
 						max: 100, //максимальное качество в процентах
 						quality: "high", //тут всё говорит само за себя, если хоть капельку понимаешь английский
 						use: [pngquant()],
@@ -276,7 +275,7 @@ gulp.task("webp", function () {
 		.src("src/images/**/*.+(png|jpg|jpeg|gif|svg|ico|webp)")
 		.pipe(size())
 		.pipe(webp({
-			quality: 75,
+			quality: 95,
 			method: 6,
 		}))
 		.pipe(gulp.dest("build/images"))
