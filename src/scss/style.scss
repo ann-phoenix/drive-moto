@@ -594,6 +594,12 @@
 		text-transform: uppercase;
 		background: $light-gray;
 		padding: 17px 43px;
+		transition: all .3s;
+	}
+
+	&__more-link:hover {
+		background: $blue;
+		color: #fff;
 	}
 }
 
@@ -1315,6 +1321,7 @@
 	display: none;
 }
 
+
 //end catalog page
 //start product-page
 
@@ -1494,6 +1501,31 @@
 		display: inline-block;
 	}
 
+	&__tabs-info {
+		font-size: 18px;
+		line-height: 23px;
+
+		p:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__tabs-infotitle{
+		margin-bottom: 10px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&__tabs-infolist {
+		font-size: 18px;
+		line-height: 23px;
+		margin-bottom: 20px;
+		li:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+
+
 	&__top-line {
 		margin-bottom: 10px;
 	}
@@ -1585,10 +1617,11 @@
 	}
 }
 
-.workhours{
+.workhours {
 	display: flex;
 	justify-content: space-between;
 }
+
 //end card__tabs section
 
 //end product-page

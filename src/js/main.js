@@ -5,6 +5,11 @@ $(function () {
 		dots: true,
 		prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/icons/arrow-left.svg" alt=""></button>',
 		nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/icons/arrow-right.svg" alt=""></button>',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 7000,
+		fade: true,
 	});
 
 	/*Product slider*/
@@ -13,7 +18,10 @@ $(function () {
 		slidesToScroll: 1,
 		prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/icons/arrow-black-left.svg" alt=""></button>',
 		nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/icons/arrow-black-right.svg" alt=""></button>',
-
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
 	});
 
 	/*Tabs*/
@@ -57,8 +65,8 @@ $(function () {
 	/*ion.rangeSlider http://ionden.com/a/plugins/ion.rangeSlider/ */
 	$('.js-range-slider').ionRangeSlider({
 		type: 'double',
-		min: 100000,
-		max: 500000,
+		min: 500000,
+		max: 2900000,
 	});
 
 	/*Rate Yo! https://rateyo.fundoocode.ninja/ */
