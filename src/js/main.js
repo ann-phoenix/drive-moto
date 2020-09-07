@@ -1,5 +1,11 @@
 $(function () {
 
+	/*Burger and mobile menu*/
+	$('.menu__burger').on('click', function(){
+		$('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+	});
+
+
 	/*Banner slider https://kenwheeler.github.io/slick/  */
 	$('.banner-section__slider').slick({
 		dots: true,

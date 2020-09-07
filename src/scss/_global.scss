@@ -30,7 +30,7 @@ h6 {
 
 ul,
 ol,
-li{
+li {
   list-style: none;
 }
 
@@ -39,6 +39,7 @@ a {
   color: inherit;
   display: inline-block;
 }
+
 a:focus,
 button:focus,
 input:focus {
@@ -54,14 +55,16 @@ h6 {
   font-size: inherit;
 }
 
-body{
+body {
   color: $dark;
   font-size: 20px;
   line-height: 24px;
   @include sf400;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
-.container{
+.container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -82,16 +85,17 @@ body{
   flex: 0 0 auto;
 }
 
-.img {  //гибкость изображения
+.img {
+  //гибкость изображения
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.page-section{
+.page-section {
   margin-bottom: 80px;
 }
 
-.btn{
+.btn {
   cursor: pointer;
 }
