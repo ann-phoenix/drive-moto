@@ -1,7 +1,7 @@
 $(function () {
 
 	/*Burger and mobile menu*/
-	$('.menu__burger').on('click', function(){
+	$('.menu__burger').on('click', function () {
 		$('.menu-mobile__list').toggleClass('menu-mobile__list--active')
 	});
 
@@ -16,14 +16,12 @@ $(function () {
 		autoplay: true,
 		autoplaySpeed: 7000,
 		fade: true,
-		responsive: [
-			{
-				breakpoint: 961,
-				settings: {
-					arrows: false,
-				}
-			},
-		]
+		responsive: [{
+			breakpoint: 961,
+			settings: {
+				arrows: false,
+			}
+		}, ]
 	});
 
 	/*Product slider*/
@@ -36,6 +34,38 @@ $(function () {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 5000,
+		responsive: [{
+				breakpoint: 1301,
+				settings: {
+					arrows: false,
+					dots: true,
+				}
+			},
+			{
+				breakpoint: 1201,
+				settings: {
+					slidesToShow: 3,
+					dots: true,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 971,
+				settings: {
+					slidesToShow: 2,
+					dots: true,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 591,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					arrows: false,
+				}
+			},
+		]
 	});
 
 	/*Tabs*/
