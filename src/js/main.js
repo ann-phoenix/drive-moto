@@ -16,6 +16,14 @@ $(function () {
 		autoplay: true,
 		autoplaySpeed: 7000,
 		fade: true,
+		responsive: [
+			{
+				breakpoint: 961,
+				settings: {
+					arrows: false,
+				}
+			},
+		]
 	});
 
 	/*Product slider*/
