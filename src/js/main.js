@@ -122,4 +122,9 @@ $(function () {
 		starWidth: "23px",
 	});
 
+	//Accordion
+	$('.footer-top__dropdown').on('click', function(){
+		$(this).next().slideToggle();
+		$(this).toggleClass('footer-top__dropdown--active');
+	});
 });
