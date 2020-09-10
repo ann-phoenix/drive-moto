@@ -106,6 +106,11 @@ $(function () {
 		$('.product-item__wrapper').addClass('product-item__wrapper--line');
 	})
 
+	$('.aside__btn').on('click', function () {
+		$(this).next().slideToggle();
+	});
+
+
 	/*ion.rangeSlider http://ionden.com/a/plugins/ion.rangeSlider/ */
 	$('.js-range-slider').ionRangeSlider({
 		type: 'double',
@@ -123,7 +128,7 @@ $(function () {
 	});
 
 	//Accordion
-	$('.footer-top__dropdown').on('click', function(){
+	$('.footer-top__dropdown').on('click', function () {
 		$(this).next().slideToggle();
 		$(this).toggleClass('footer-top__dropdown--active');
 	});

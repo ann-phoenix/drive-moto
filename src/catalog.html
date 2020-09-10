@@ -7,21 +7,25 @@
       <!--breadcrumbs-->
       <div class="breadcrumbs">
         <div class="container">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__list-item"><a href="#">Главная</a></li>
-            <li class="breadcrumbs__list-item"><a href="#">Гидроциклы</a></li>
-          </ul>
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list mobile-overflow">
+              <li class="breadcrumbs__list-item"><a href="#">Главная</a></li>
+              <li class="breadcrumbs__list-item"><a href="#">Гидроциклы</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <section class="catalog">
         <div class="container">
           <h2 class="catalog__title">Гидроциклы</h2>
           <div class="catalog__filter">
-            <div class="catalog__filter-items">
-              <button class="btn">Любительские</button>
-              <button class="btn">от 500 000</button>
-              <button class="btn">BRP</button>
-              <button class="btn">Spark</button>
+            <div class="catalog__filter-itemsinner">
+              <div class="catalog__filter-items mobile-overflow">
+                <button class="btn">Любительские</button>
+                <button class="btn">от 500 000</button>
+                <button class="btn">BRP</button>
+                <button class="btn">Spark</button>
+              </div>
             </div>
             <div class="catalog__filter-btn btn">
               <select class="filter-style select-item">
@@ -53,9 +57,10 @@
             </div>
           </div>
           <div class="catalog__inner">
+            <div class="aside__btn">фильтр</div>
             <!--aside-filter-->
             <aside class="catalog__inner-aside aside-filter">
-              <div class="tabs-wrapper">
+              <div class="tabs-wrapper tabs-wrapper--no-scroll">
                 <div class="tabs aside-filter__tabs">
                   <a class="tab tab--active aside-filter__tab tab--active" href="#filter-1"><span>Параметры</span></a>
                   <a class="tab aside-filter__tab" href="#filter-2"><span>по марке</span></a>
