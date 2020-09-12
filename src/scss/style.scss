@@ -671,6 +671,11 @@
 	letter-spacing: 0.07em;
 }
 
+.product-slider .product-slider__item{
+	display: flex !important;
+	justify-content: center !important;
+}
+
 .product-slider {
 	&__slider-btn {
 		position: absolute;
@@ -741,7 +746,7 @@
 	&-form {
 		margin-top: 33px;
 		display: flex;
-		// justify-content: space-between;
+		justify-content: center;
 	}
 
 	&-form__input {
@@ -1705,5 +1710,8 @@
 //end card__tabs section
 
 //end product-page
+
+
+
 
 @import 'media';
