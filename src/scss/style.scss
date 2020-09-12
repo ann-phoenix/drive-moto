@@ -45,6 +45,10 @@
 		top: -10px;
 	}
 
+	.logo-img__mobile {
+		display: none;
+	}
+
 	.menu-mobile__list {
 		width: 243px;
 		position: absolute;
@@ -80,6 +84,11 @@
 
 	.menu__mobile-linewrapper {
 		display: none;
+	}
+
+	.menu-mobile__address {
+		padding: 65px 0 135px 53px;
+		@include sf700;
 	}
 
 	.user-list {
@@ -390,8 +399,9 @@
 .categories {
 	&__inner {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		flex-wrap: wrap;
+		margin-left: -30px;
 	}
 
 	&__item {
@@ -403,7 +413,8 @@
 		justify-content: space-between;
 		padding: 20px 20px 16px;
 		transition: all .3s;
-		margin-right: 5px;
+		flex-basis: calc(33.3333% - 30px);
+		margin-left: 30px;
 	}
 
 	&__item:hover {
@@ -483,7 +494,7 @@
 	text-align: center;
 	padding: 52px 20px 31px;
 	transition: all .4s;
-	min-height: 400px;
+	min-height: 430px;
 	width: 100%;
 
 	&__wrapper {
@@ -574,6 +585,7 @@
 		padding: 14px 0 25px;
 		font-size: 18px;
 		line-height: 21px;
+		min-height: 102px;
 	}
 
 	//heart icon
@@ -687,10 +699,12 @@
 	.slick-dots {
 		bottom: -30px;
 	}
-	.slick-dots button{
+
+	.slick-dots button {
 		background-color: $gray;
 	}
-	.slick-dots .slick-active button{
+
+	.slick-dots .slick-active button {
 		background-color: $blue;
 	}
 }
@@ -727,7 +741,7 @@
 	&-form {
 		margin-top: 33px;
 		display: flex;
-		justify-content: space-between;
+		// justify-content: space-between;
 	}
 
 	&-form__input {
@@ -778,6 +792,10 @@
 
 	&__bottom-link+&__bottom-link {
 		margin-left: 81px;
+	}
+
+	&-top__dropdown {
+		pointer-events: none;
 	}
 }
 
@@ -926,7 +944,7 @@
 	padding: 7px 10px 7px 10px;
 }
 
-.aside__btn{
+.aside__btn {
 	display: none;
 }
 
@@ -1429,7 +1447,7 @@
 		color: $blue;
 	}
 
-	&-card__button-mobile{
+	&-card__button-mobile {
 		display: none;
 	}
 
