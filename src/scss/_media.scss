@@ -8,6 +8,7 @@
 
 @media (max-width: 1200px) {
 
+
 	//banner-section
 	.banner-section__inner {
 		justify-content: space-around;
@@ -112,6 +113,7 @@
 				background: $dark;
 				border-radius: 3px;
 				margin: 8px 0;
+				display: block;
 			}
 		}
 
@@ -425,12 +427,12 @@
 
 	//footer
 	.footer-form__input {
-    font-size: 13px;
+		font-size: 13px;
 		padding: 0 10px;
 	}
 
 	.footer-form__btn {
-    padding: 10px;
+		padding: 10px;
 		font-size: 10px;
 	}
 }

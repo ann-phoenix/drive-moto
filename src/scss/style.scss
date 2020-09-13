@@ -488,7 +488,9 @@
 }
 
 
+
 .product-item {
+
 	border: 1px solid $gray;
 	border-radius: 3px;
 	text-align: center;
@@ -535,13 +537,18 @@
 		border-bottom: 1px solid $blue;
 	}
 
+
+
 	&__notify-text {
 		display: none;
 		@include sf700;
 		font-size: 18px;
 		line-height: 21px;
 		color: $dark;
+		margin-bottom: 15px;
 	}
+
+
 
 	&__wrapper.product-item__not-available .product-item__notify-text {
 		display: block;
